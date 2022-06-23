@@ -1,0 +1,22 @@
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let item of head" [class]="item.class || ''">{{item.text}}</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of items">
+    <td *ngFor="let item of row; index as i" [attr.data-label]="head[i].text">
+      <div *ngIf="!!item.icon" class="flex items-center" [class]="item.class || ''">
+        <img [src]="item.icon" [alt]="item.text" class="w-10 h-10 mr-4 rounded-full hidden sm:block">
+        {{ item.text }}
+      </div>
+      <div *ngIf="!item.icon" [class]="item.class || ''" class="text-left sm:text-center">{{ item.text }}</div>
+    </td>
+    <td data-label="Actions">
+      <img class="sm:mx-auto rotate-90 sm:rotate-0" src="/assets/svg/actions.svg" alt="Actions">
+    </td>
+  </tr>
+  </tbody>
+</table>

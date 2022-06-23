@@ -1,0 +1,46 @@
+
+table {
+  @apply w-full border-separate;
+  border-spacing: 0 24px;
+}
+
+
+table > tbody > tr {
+  @apply mb-6;
+  background-color: #F9F9F9;
+}
+
+table > thead > tr > th {
+  @apply py-6;
+}
+table > tbody > tr > td{
+  @apply p-6 text-xs sm:text-sm;
+}
+
+@media screen and (max-width: 640px) {
+  table > thead {
+    display: none;
+  }
+  table > tbody > tr, table > tbody > tr > td {
+    @apply p-1.5;
+    display: block;
+  }
+
+  table > tbody > tr {
+    @apply bg-white p-3 shadow rounded;
+
+  }
+
+  table > tbody td::before {
+    content: attr(data-label);
+    font-size: 0.75rem;
+    float: left;
+    font-weight: bold;
+    display: block;
+    width: 50%;
+  }
+
+  td:nth-child(odd) {
+    background-color: #F9F9F9;
+  }
+}
