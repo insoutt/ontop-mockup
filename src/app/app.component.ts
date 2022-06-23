@@ -7,4 +7,24 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ontop-frontend';
+
+  items = [
+    {
+      name: 'Contracts',
+      icon: '/assets/svg/user.svg',
+      active: true,
+    },
+    {
+      name: 'Documents',
+      icon: '/assets/svg/file.svg',
+    },
+    {
+      name: 'Payout',
+      icon: '/assets/svg/card.svg',
+    },
+    {
+      name: 'Time',
+      icon: '/assets/svg/calendar.svg',
+    },
+  ]
 }

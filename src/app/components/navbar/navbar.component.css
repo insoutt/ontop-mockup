@@ -1,0 +1,32 @@
+
+.navbar-container {
+  @apply flex justify-between items-center px-20;
+  height: 108px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-indicator {
+  @apply bg-primary;
+  height: 6px;
+}
+
+.navbar-items {
+  @apply list-none flex text-lg font-bold h-full;
+  color: #898989;
+}
+
+.navbar-items .navbar-item{
+  @apply flex justify-between flex-col mr-20;
+}
+.navbar-brand {
+}
+
+.navbar-right {
+  @apply items-center;
+}
+.navbar-right::before {
+  @apply mr-10;
+  content: "";
+  border: 0.5px solid #C4C4C4;
+  height: 45px;
+}
