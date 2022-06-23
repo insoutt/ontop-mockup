@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import {NavbarComponent} from "./components/navbar/navbar.component";
 import { ButtonComponent } from './components/button/button.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
+import { SelectComponent } from './components/select/select.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { SearchInputComponent } from './components/search-input/search-input.com
     NavbarComponent,
     NavbarComponent,
     ButtonComponent,
-    SearchInputComponent
+    SearchInputComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule
