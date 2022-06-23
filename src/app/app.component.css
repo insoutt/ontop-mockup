@@ -1,4 +1,21 @@
 
+
 .app-container {
-  padding: 0 180px;
+  @apply px-6;
+}
+
+.card {
+  @apply sm:shadow sm:bg-white sm:p-8 sm:rounded
+}
+
+@media screen(md) {
+  .app-container {
+    padding: 0 40px;
+  }
+}
+
+@media screen(lg) {
+  .app-container {
+    padding: 0 180px;
+  }
 }
