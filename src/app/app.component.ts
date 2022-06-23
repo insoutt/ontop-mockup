@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ontop-frontend';
 
+  client = {
+    name: '[NAME]',
+  };
+
   items = [
     {
       name: 'Contracts',

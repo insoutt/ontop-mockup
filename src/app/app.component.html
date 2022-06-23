@@ -1,2 +1,17 @@
 
 <app-navbar [items]="items"></app-navbar>
+
+<h1 class="text-center text-3xl font-bold py-24">
+  Contracts for {{ client.name }}
+</h1>
+
+<main class="app-container">
+  <section class="flex">
+    <app-search-input class="w-full"></app-search-input>
+    <app-button icon="tune" class="ml-5" btnClass="w-28 justify-center" variant="secondary">
+      Filter
+    </app-button>
+    <app-button icon="add" class="ml-5" btnClass="w-48 justify-center">New hire</app-button>
+  </section>
+
+</main>

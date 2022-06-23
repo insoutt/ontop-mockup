@@ -1,0 +1,4 @@
+<button class="btn" [class]="'btn-' + variant + ' ' + btnClass">
+  <img *ngIf="iconPath" class="mr-2" [src]="iconPath" alt="Icono">
+  <ng-content></ng-content>
+</button>
