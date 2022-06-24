@@ -1,19 +1,10 @@
 <header>
   <nav class="navbar-container">
     <div class="navbar-brand">
-      <img src="/assets/images/logo.png" alt="Ontop Logo">
+      <img class="ml-14 sm:ml-0" src="/assets/images/logo.png" alt="Ontop Logo">
     </div>
     <ol class="navbar-items">
-      <li *ngFor="let item of items" class="navbar-item" [ngClass]="{'text-primary': item.active}">
-        <span></span>
-        <a href="#" class="flex items-center">
-          <img class="mx-auto w-5 h-5 mr-2" [src]="item.icon" [alt]="item.name">
-          <span>{{item.name}}</span>
-          <img *ngIf="item.active" class="ml-1" src="/assets/svg/arrow-down-sm-active.svg" alt="Arrow Down">
-          <img *ngIf="!item.active" class="ml-1" src="/assets/svg/arrow-down-sm.svg" alt="Arrow Down">
-        </a>
-        <span [ngClass]="{'navbar-indicator': item.active}"></span>
-      </li>
+      <app-navbar-item *ngFor="let item of items" [item]="item"></app-navbar-item>
     </ol>
     <ol class="navbar-items navbar-right">
       <li class="flex items-center">
@@ -21,6 +12,11 @@
         <span class="ml-3">
             <img src="/assets/svg/arrow-down.svg" alt="Arrow Down">
           </span>
+      </li>
+    </ol>
+    <ol class="d-block sm:hidden">
+      <li>
+        <img class="w-8 mr-5 cursor-pointer" src="/assets/svg/menu.svg" alt="Menu">
       </li>
     </ol>
   </nav>

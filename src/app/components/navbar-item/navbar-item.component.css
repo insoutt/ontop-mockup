@@ -1,0 +1,7 @@
+.navbar-item{
+  @apply flex justify-between flex-col mr-20 h-full;
+}
+.navbar-indicator {
+  @apply bg-primary;
+  height: 6px;
+}
