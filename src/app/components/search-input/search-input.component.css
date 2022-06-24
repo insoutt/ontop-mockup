@@ -1,6 +1,7 @@
 
 input {
   @apply w-full focus:border-primary pl-2;
+  @apply focus:outline-none focus:border-b-2 focus:border-red-500 rounded-tr rounded-br;
   /*@apply rounded-tr-md rounded-br-md w-full;*/
   /*@apply border-t border-b border-r;*/
   border-color: #989B9B;
@@ -14,8 +15,6 @@ input {
 }
 
 .input-icon {
-  /*@apply rounded-tl-md rounded-bl-md;*/
-  /*@apply border-t border-b border-l;*/
   @apply p-4;
   border-color: #989B9B;
 }
