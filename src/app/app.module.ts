@@ -7,6 +7,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { SearchInputComponent } from './components/search-input/search-input.component';
 import { SelectComponent } from './components/select/select.component';
 import { TableComponent } from './components/table/table.component';
+import { StatusBadgeComponent } from './components/status-badge/status-badge.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { TableComponent } from './components/table/table.component';
     ButtonComponent,
     SearchInputComponent,
     SelectComponent,
-    TableComponent
+    TableComponent,
+    StatusBadgeComponent
   ],
   imports: [
     BrowserModule

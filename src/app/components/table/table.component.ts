@@ -8,6 +8,7 @@ interface Head {
 interface Item {
   text:string;
   icon?: string;
+  badge?: boolean;
   class?: 'text-right' | 'text-left' | 'text-center';
 }
 
@@ -32,14 +33,14 @@ export class TableComponent implements OnInit {
       {text: 'Type'},
       {text: 'Start date'},
       {text: 'Amount'},
-      {text: 'success'},
+      {text: 'active', badge: true},
     ],
     [
       {text: 'Contractor name2', icon: '/assets/images/user-profile-1.png'},
       {text: 'Type2'},
       {text: 'Start date2'},
       {text: 'Amount2'},
-      {text: 'pending'},
+      {text: 'pending', badge: true},
     ],
   ]
 

@@ -1,0 +1,5 @@
+.circle {
+  @apply rounded-full;
+  width: 7px;
+  height: 7px;
+}

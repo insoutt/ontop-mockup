@@ -5,6 +5,21 @@ module.exports = {
   ],
   presets: [],
   darkMode: 'media', // or 'class'
+  safelist: [
+    'text-amber-800',
+    'text-amber-500',
+    'bg-amber-500/20',
+    'bg-amber-800/20',
+    'bg-amber-500',
+    'bg-amber-800',
+
+    'text-green-800',
+    'text-green-500',
+    'bg-green-500/20',
+    'bg-green-800/20',
+    'bg-green-500',
+    'bg-green-800',
+  ],
   theme: {
     screens: {
       sm: '640px',
