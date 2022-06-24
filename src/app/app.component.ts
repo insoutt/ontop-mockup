@@ -31,4 +31,11 @@ export class AppComponent {
       icon: '/assets/svg/calendar.svg',
     },
   ]
+
+  showFilter = false;
+
+  toggleFilter() {
+    console.log('toggle')
+    this.showFilter = !this.showFilter;
+  }
 }
