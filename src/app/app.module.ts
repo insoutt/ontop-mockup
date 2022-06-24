@@ -9,6 +9,7 @@ import { SelectComponent } from './components/select/select.component';
 import { TableComponent } from './components/table/table.component';
 import { StatusBadgeComponent } from './components/status-badge/status-badge.component';
 import { ActionsComponent } from './components/actions/actions.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ActionsComponent } from './components/actions/actions.component';
     SelectComponent,
     TableComponent,
     StatusBadgeComponent,
-    ActionsComponent
+    ActionsComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule
