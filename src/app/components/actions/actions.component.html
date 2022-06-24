@@ -1,0 +1,23 @@
+<button class="relative" (click)="toggle()">
+  <img class="sm:mx-auto rotate-90 sm:rotate-0" src="/assets/svg/actions.svg" alt="Actions">
+  <div class="menu menu-show" *ngIf="show">
+    <ul>
+      <li>
+        <img class="pr-3 w-7 h-7" src="/assets/svg/edit.svg" alt="Edit">
+        Edit
+      </li>
+      <li>
+        <img class="pr-3 w-7 h-7" src="/assets/svg/sign.svg" alt="Sign">
+        Sign
+      </li>
+      <li>
+        <img class="pr-3 w-7 h-7" src="/assets/svg/file.svg" alt="Summary">
+        View summary
+      </li>
+      <li class="text-red-500">
+        <img class="pr-3 w-7 h-7" src="/assets/svg/trash.svg" alt="Trash">
+        Delete
+      </li>
+    </ul>
+  </div>
+</button>

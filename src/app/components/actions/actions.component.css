@@ -1,0 +1,16 @@
+
+li {
+  @apply py-3 border-b flex items-center cursor-pointer;
+  @apply hover:border-primary;
+  transition: .3s ease;
+}
+
+.menu {
+  @apply bg-white shadow px-3 rounded w-40;
+}
+.menu-show {
+  @apply absolute;
+  top: 0.5rem;
+  right: -2rem;
+  z-index: 9999;
+}
