@@ -32,7 +32,7 @@ export class AppComponent {
     },
   ]
 
-  showFilter = false;
+  showFilter = true;
 
   toggleFilter() {
     console.log('toggle')
