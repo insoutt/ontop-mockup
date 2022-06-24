@@ -1,7 +1,8 @@
 
 
 .app-container {
-  @apply px-6;
+  @apply px-6 pb-16;
+
 }
 
 .card {
@@ -10,12 +11,14 @@
 
 @media screen(md) {
   .app-container {
-    padding: 0 40px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
 @media screen(lg) {
   .app-container {
-    padding: 0 180px;
+    padding-right: 180px;
+    padding-left: 180px;
   }
 }
