@@ -12,6 +12,7 @@ import { ActionsComponent } from './components/actions/actions.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { NavbarItemComponent } from './components/navbar-item/navbar-item.component';
 import { DateInputComponent } from './components/date-input/date-input.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DateInputComponent } from './components/date-input/date-input.component
     ActionsComponent,
     ChatComponent,
     NavbarItemComponent,
-    DateInputComponent
+    DateInputComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule
