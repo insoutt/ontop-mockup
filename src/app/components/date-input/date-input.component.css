@@ -1,0 +1,5 @@
+
+input {
+  @apply w-full py-3.5 pl-2 rounded-md text-xs;
+  @apply focus:outline-none;
+}

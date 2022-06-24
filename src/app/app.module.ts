@@ -11,6 +11,7 @@ import { StatusBadgeComponent } from './components/status-badge/status-badge.com
 import { ActionsComponent } from './components/actions/actions.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { NavbarItemComponent } from './components/navbar-item/navbar-item.component';
+import { DateInputComponent } from './components/date-input/date-input.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarItemComponent } from './components/navbar-item/navbar-item.compon
     StatusBadgeComponent,
     ActionsComponent,
     ChatComponent,
-    NavbarItemComponent
+    NavbarItemComponent,
+    DateInputComponent
   ],
   imports: [
     BrowserModule
